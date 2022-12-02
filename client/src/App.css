@@ -1,0 +1,164 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #76a2ff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+.registrationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.login,
+.signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup {
+    margin-bottom: 20px;
+}
+
+.login input,
+.signup input {
+    margin: 10px 0;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login button,
+.signup button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login label,
+.signup label {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-ser;
+    font-size: 20px;
+    color: #fff;
+}
+
+.joinGame {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.joinGameForm > button,
+.joinGame > button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 51px;
+    cursor: pointer;
+}
+
+.joinGame input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 220px;
+    height: 30px;
+}
+
+.waiting {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    height: 51px;
+    color: #fff;
+}
+
+.leaveGameButton {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    height: 51px;
+    cursor: pointer;
+}
+
+.winText {
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .board {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .board {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .board {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.turn {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.row {
+    flex: 33.333%;
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    flex: 33.333%;
+    height: 100%;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square:active {
+    background-color: lightgray;
+}
